@@ -101,3 +101,10 @@ footer{
     box-shadow: -1px 1px 10px black;
 
 }
+
+/* Form Buttons */
+
+.job-button {
+     background-color: #023E7D;
+     color: white;
+}
