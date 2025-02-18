@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid p-2">
-        <h1 class="navbar-brand d-inline-block align-text-top" href="index.html">New Horizons</h1>
+        <h1 class="navbar-brand d-inline-block align-text-top" href="index.html">New Horizons Academy</h1>
         <button class="navbar-toggler w-25" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -45,9 +45,9 @@
   <div class="container-fluid">
 
     <!-- For the banner-->
-    <div class="row mx-auto">
-        <div class = "col-12 mx-auto">
-            <form class="mx-auto d-flex align-content-end">
+    <div class="row mx-auto mb-5">
+        <div class = "col-md-6 col-12 mx-auto">
+            <form class="mx-auto">
                 <div class="row mt-4">
     
                     <!-- Personal Information -->
@@ -60,20 +60,20 @@
                     
 
                     <div class="row">
-                        <div class="mb-3 col-lg-4 col-md-4 col-12">
+                        <div class="mb-3 col-12">
                             <label class="form-label" for="cname">Company Name<span class="srequired"> *</span></label>
                             <input type="text" class="form-control me-4" id="cname" name="cname" placeholder="John's Autoparts" required>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 col-lg-4 col-md-4 col-12">
+                        <div class="mb-3 col-12">
                             <label class="form-label" for="position">Position<span class="srequired"> *</span></label>
                             <input type="text" class="form-control me-4" id="position" name="position" placeholder="Clerk" required>
     
                         </div>
                     </div>
                     <div class="row">
-                        <div class="mb-3 col-lg-6 col-md-6 col-12">
+                        <div class="mb-3 col-12">
                             <label class="form-label" for="description">Job Description<span class="srequired"> *</span></label>
                             <textarea name="description" class = "form-control" id="description" rows="8" cols="100" required> </textarea>
                         </div>
@@ -87,13 +87,18 @@
                 </div>
             </form>
         </div>
+        <div class="col-6 mx-auto d-none d-xl-block">
+          <div class="w-100 d-flex">
+              <img class="justify-content-center" src="images/collage.png" alt="Students working jobs">
+          </div>
+        </div>
     </div>
 
 
     <!-- Footer-->
 
   </div>
-  <div class="container-fluid fixed-bottom">
+  <div class="container-fluid">
     <footer class="row mt-3">
 
       <!-- First Column-->
@@ -111,7 +116,7 @@
 
           <!--Column 1-->
           <div class="col-6">
-            <p>New Horizons<br>
+            <p>New Horizons Academy<br>
               1234 Education Lane<br>
               Virginia Beach, VA - 23464<br>
               
@@ -138,6 +143,19 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/firebase-config.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   </body>
 
 </html>
