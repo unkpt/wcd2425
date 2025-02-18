@@ -64,14 +64,14 @@
       </div>
     </div>
     <div class="row d-flex justify-content-evenly">
-      <div class="card mt-3 col-12 col-md-4 p-4">
-        <div class="card-body">
-          <h5 class="card-title pt-2"> Burger King: Cashier </h5>
-          <p class="card-text mt-2"> Take orders from customers while being polite and respectful all the time. Need to be able to show up to work and be reliable.
-          </p>
-          <a href="application.html" type="button" class="btn job-button">Apply Now</a>
+        <div class="card mt-3 col-12 col-md-4 p-4" id="jobCards">
+          <div class="card-body">
+            <h5 class="card-title pt-2"> Burger King: Cashier </h5>
+            <p class="card-text mt-2"> Take orders from customers while being polite and respectful all the time. Need to be able to show up to work and be reliable.
+            </p>
+            <a href="application.html" type="button" class="btn job-button">Apply Now</a>
+          </div>
         </div>
-      </div>
       <div class="card mt-3 col-12 col-md-4 p-4">
         <div class="card-body">
           <h5 class="card-title pt-2"> Starbucks: Barista </h5>
@@ -166,21 +166,10 @@
     </footer>
   </div>
 
-
+  <script src="js/post.js"></script>
+  <script src="js/listing.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="js/firebase-config.js"></script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
   </body>
 
 </html>
