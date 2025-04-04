@@ -63,7 +63,7 @@
         <h1 class="text-center my-3">Available Positions</h1>
       </div>
     </div>
-    <div class="row d-flex justify-content-evenly">
+    <div class="row d-flex justify-content-evenly" id="listing">
         <div class="card mt-3 col-12 col-md-4 p-4" id="jobCards">
           <div class="card-body">
             <h5 class="card-title pt-2"> Burger King: Cashier </h5>
@@ -87,36 +87,9 @@
           </p>
           <a href="application.html" type="button" class="btn job-button">Apply Now</a>
         </div>
-      </div>
-    </div>
-    <div class="row mb-3">
-      <div class="card mt-3 col-12 col-lg-4 col-md-4 p-4">
-        <div class="card-body">
-          <h5 class="card-title pt-2"> Chick-Fil-A: Cashier </h5>
-          <p class="card-text mt-2"> Take orders from customers while being polite and respectful all the time. Need to be able to show up to work and be reliable.
-          </p>
-          <a href="application.html" type="button" class="btn job-button">Apply Now</a>
-        </div>
-      </div>
-      <div class="card mt-3 col-12 col-lg-4 col-md-4 p-4">
-        <div class="card-body">
-          <h5 class="card-title pt-2"> Walmart: Stocker </h5>
-          <p class="card-text mt-2"> Work in the back organizing the inventory and then stock it onto shelves as needed. Need to be able to work in a team and be reliable.
-          </p>
-          <a href="application.html" type="button" class="btn job-button">Apply Now</a>
-        </div>
-      </div>
-      <div class="card mt-3 col-12 col-lg-4 col-md-4 p-4">
-        <div class="card-body">
-          <h5 class="card-title pt-2"> Pizza Hut: Dishwasher </h5>
-          <p class="card-text mt-2"> Have knowledge in how to effectively clean dishes, pans, and cups. Need to be reliable and know how to work effectively in a fast-paced team environment.
-          </p>
-          <a href="application.html" type="button" class="btn job-button">Apply Now</a>
-        </div>
-      </div>
-    </div>
+    </div> 
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center mt-4">
         <a type="button" href="job.html" class="btn job-button rounded-1">Post a Job +</a>
       </div>
     </div>
@@ -166,10 +139,8 @@
     </footer>
   </div>
 
-  <script src="js/post.js"></script>
-  <script src="js/listing.js"></script>
+  <script type="module" src="js/listing.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="js/firebase-config.js"></script>
   </body>
 
 </html>
